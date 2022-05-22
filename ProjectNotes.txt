@@ -1,0 +1,100 @@
+https://github.com/abdallah1016126/PacmanGame
+
+git pull https://github.com/abdallah1016126/PacmanGame
+
+https://docs.google.com/document/d/1HOXf1UiAUPb4UhgmtmNawmg_ILtEybj8iwo9cBizbno/edit?usp=sharing
+https://docs.google.com/presentation/d/1qX-QouZ1NN23IPwWmWiGvG0129xfwoNDn5l_EdrMusU/edit?usp=sharing
+
+abdallah_taha@aucegypt.edu
+
+9161566948
+
+https://aucegypt.zoom.us/j/9161566948
+
+
+//Slots need to be in a class that inhirits QObject
+//Timers need classes/objects this of type or that inhirits QObject
+
+
+changelog:
+deleted test member varaible in ghosts
+deleted changestate and getstate functions in pacman
+deleted getrow and getcol functions in pacman
+deleted state member variable from pacman
+
+
+QGraphicsPixMapItem contains the QPixmap and the postion
+QPixMap contains the image and size (width and height)
+
+
+
+TODO:
+-ghost underneath pellest WTF
+-see into the ghost chasing ai code, or not 
+-make the player portal the same as ghosts by checking direction and total-2 to 1 and from 1 to total-2
+-clean your code 
+-make fixed constant class maybe?
+-****look into anti alaising for each of the qGraphics pixmap items!
+
+
+
+Done:
+✓ add music maybe
+✓ make more fruit assets!
+✓ change the ghots scared assets maybe?
+✓ fix the ghost going through the portalss
+✓ increase timer for fruits
+
+
+
+QT += core gui \	
+	multimedia 
+	
+	//in the pro!!!
+	
+	and include it
+//QmediaPlayer * backgroundmusic
+
+background musice = new Qmedia player
+connect (background muisc sing t)
+
+
+https://stackoverflow.com/questions/37690616/play-background-music-in-a-loop-qt
+
+
+
+Things to consider for later:
+1- Change all the assets art to pixelated art, it will render better and give a unique look
+-Retro vs 2D artstyle!!!
+
+2- This is a bit of an ambitious idea but how about if we do pacman like the dance of necromancer, so pacman will move on his own but with the beat of the music, ofcourse that means we have to get a beat, in fact everything moves to the beat, the pellets gets change size and maybe rotate (if they are not perfect circles) to the beat, the ghots move to the beat, the beat changes when you have the pellet, you maybe move faster and so on, it doesn't have to perfect but an illusion that everything moves to the beat by simple things like flashing and the usual game feel, I wonder if I can do some sort of vfx in the game, for example add screen shake somehow by rotating the view and scene for example, this idea is soo stupid that I will probably never do, but good to think of it anyway.
+the music will have to have a constant tempo, or metronome if you like.
+
+
+
+
+
+
+    //when using qmediaplayer you have five steps
+    //create it
+    //connect
+    //setmedia
+    //setvolume if you want
+    //play
+    //connect(backgroundmusic, SIGNAL(positionChanged(qint64)), this, SLOT(positionChanged(qint64)));
+    //backgroundmusic->setMedia(QUrl::fromLocalFile(""));
+    //backgroundmusic->setVolume(50);
+    //backgroundmusic->play();
+	
+	
+	
+	
+    //-----when using qmediaplayer with playlist
+    //create playlist
+    //addmedia to playlist
+    //setCurrentIndex of playlist
+    //playlist set playback mode //Playlist->setPlaybackMode(QMediaPlaylist::Loop);
+    //create a qmediaplayer
+    //set the playlist of the qmediaplayer
+    //play the qmediaplayer
+
